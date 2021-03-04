@@ -1,0 +1,111 @@
+/*Variables*/
+$background-color-1: #f3d2be;
+$background-color-2: rgb(22, 22, 22);
+$text-color: white;
+
+// Heading font-ARCHIVO BLACK
+// text font- Montserrat
+
+@mixin tabFormatting {
+  display: block;
+  color: $text-color;
+  width: 400px;
+  text-align: center;
+}
+
+* {
+  background-color: $background-color-2;
+  font-family: "Montserrat", sans-serif;
+}
+
+//ID Defination
+#logo {
+  width: 270px;
+  height: 80px;
+}
+
+#hypen {
+  position: relative;
+  left: -15px;
+}
+
+#userIcon {
+  position: relative;
+  left: -25px;
+}
+
+//Class Defination
+.navBar {
+  display: flex;
+  justify-content: center;
+}
+
+.menuOption {
+  padding: 20px 20px;
+  font-size: 1em;
+  color: $background-color-1;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.heading {
+  margin-top: 60px;
+  color: $background-color-1;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.5em;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  color: $background-color-1;
+  display: grid;
+  grid-template-areas: "tab-1 tab-2 tab-3";
+  grid-gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-1,
+.tab-2,
+.tab-3,
+.tab-4,
+.tab-5,
+.tab-6 {
+  @include tabFormatting;
+}
+
+.footer {
+  color: $text-color;
+  margin-top: 20px;
+  width: 100;
+  position: absolute;
+  left: 330px;
+  font-weight: 300;
+}
+
+//tag defination
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+li {
+  margin-right: 30px;
+  color: $text-color;
+  font-size: 1.1em;
+}
